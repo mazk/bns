@@ -1,0 +1,153 @@
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<title>B&S</title> 
+<script src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript"> 
+$(document).ready(function(){ 
+$("#area1ContentId_bns").change(function(){ 
+$("#area1ContentId_bns option").each(function(i,o){ 
+if($(this).attr("selected")) 
+{ 
+$(".areaContentId_bns").hide(); 
+$(".areaContentId_bns").eq(i).show(); 
+$(".areaContentId_bns").removeAttr("name","world");
+$(".areaContentId_bns").eq(i).attr("name","world"); 
+} 
+}); 
+}); 
+$("#area1ContentId_bns").change(); 
+}); 
+</script> 
+</head> 
+<body>
+<form action="http://bangbang.qq.com/php/login" method="get" target="myframe" id="bns1">
+    <input type="radio" name="game" value="bns" checked="checked" style="display:none" />
+    服务器：
+<select id="area1ContentId_bns">
+    <option>--请选择大区--
+    <option>电信一区</option>
+    <option>电信二区</option>
+    <option>网通一区</option>
+    <option>电信三区</option>
+    <option>电信五区</option>
+    <option>电信六区</option>
+    <option>网通二区</option>
+    <option>电信七区</option>
+    <option>电信八区</option>
+    <option>网通三区</option>
+    <option>电信九区</option>
+    <option>电信十区</option>
+    <option>网通五区</option>
+    <option>电信洪福区</option>
+    <option>电信传说区</option>
+    <option>电信傲雪区</option>
+    <option>网通冰魂区</option>
+    <option>网通开泰区</option>
+    <option>电信盛世区</option>
+    <option>网通灵犀区</option>
+    <option>电信灵动区</option>
+    <option>电信时光区</option>
+    <option>电信建元区</option>
+    <option>网通彩云区</option>
+    <option>南天国测试服</option>
+</select> 
+<select class="areaContentId_bns">
+<option>--请选择服务器-- 
+</select> 
+<select class="areaContentId_bns">
+    <option value="1911">无日峰</option>
+    <option value="1913">烈沙地带</option>
+    <option value="1915">绿明村</option>
+    <option value="1917">斗神祭坛</option>
+    <option value="1919">铁傀王</option>
+    <option value="1921">松岩亭</option>
+    <option value="1923">白云禅师</option>
+    <option value="1925">飞扇堂</option>
+    <option value="1927">染血之心</option>
+    <option value="1929">冰龙吟</option>
+    <option value="1931">燎原之火</option>
+    <option value="1933">修罗斩</option>
+    <option value="1935">金刚伏魔</option>
+    <option value="1937">逍遥派</option>
+    <option value="1939">仙履奇缘</option>
+</select>
+<select class="areaContentId_bns">
+    <option value="2011">大漠流沙</option>
+    <option value="2013">情缘崖</option>
+    <option value="2015">竹林海岸</option>
+    <option value="2017">天鸟巢</option>
+    <option value="2019">金刚罗汉</option>
+    <option value="2021">花样年华</option>
+    <option value="2023">八部奇才</option>
+    <option value="2031">翔龙探海</option>
+    <option value="2029">斩天诀</option>
+    <option value="2033">开天辟地</option>
+    <option value="2035">土门客栈</option>
+    <option value="2037">先驱者</option>
+    <option value="2027">飞龙逐日</option>
+    <option value="2025">斗神血手</option>
+    <option value="2039">阴阳道仙</option>
+</select>
+<select class="areaContentId_bns">
+    <option value="3011">修炼谷</option>
+    <option value="3013">御龙林</option>
+    <option value="3015">咆哮寺院</option>
+    <option value="3017">黄沙领主</option>
+    <option value="3019">冰封神殿</option>
+    <option value="3027">天隙流光</option>
+    <option value="3035">金刚不坏</option>
+    <option value="3025">灼热之刃</option>
+    <option value="3021">擎天盟</option>
+    <option value="3023">月华神</option>
+    <option value="3029">炎龙啸</option>
+    <option value="3031">莲华乱舞</option>
+    <option value="3033">逆转阴阳</option>
+    <option value="3037">万气归宗</option>
+    <option value="3039">风帝国</option>
+</select>
+<select class="areaContentId_bns">
+    <option value="1111">疾风劲雷</option>
+    <option value="1113">苍穹之顶</option>
+    <option value="1115">落日星辉</option>
+    <option value="1117">北风孤狼</option>
+    <option value="1119">知足常乐</option>
+    <option value="1121">四海逍遥</option>
+    <option value="1123">神来之笔</option>
+    <option value="1125">一叶知秋</option>
+    <option value="1127">拓天霸王</option>
+    <option value="1129">冠绝八荒</option>
+    <option value="1131">势如破竹</option>
+    <option value="1133">狂龙出海</option>
+    <option value="1135">旷古绝今</option>
+    <option value="1137">蔽日扬沙</option>
+    <option value="1139">威震四海</option>
+</select>
+<select class="areaContentId_bns"><option value="4011">海树村</option><option value="4013">仙风道骨</option><option value="4015">天下四杰</option><option value="4017">踏雪无痕</option><option value="4019">龙叩首</option><option value="4021">浩气长存</option><option value="4023">出神入化</option><option value="4025">天狼陵</option><option value="4027">圣君堂</option><option value="4029">飞龙在天</option><option value="4031">暴风羽翼</option><option value="4033">沉鱼落雁</option><option value="4035">血阳神</option><option value="4037">气贯长虹</option><option value="4039">热血狂徒</option></select>
+<select class="areaContentId_bns"><option value="1211">大鱼坊</option><option value="1213">国色天香</option><option value="1215">北斗剑圣</option><option value="1217">顶天立地</option><option value="1219">御剑出鞘</option><option value="1221">独战群雄</option><option value="1223">一步登天</option><option value="1225">腊月遗址</option><option value="1227">铁匠坊</option><option value="1229">排山倒海</option><option value="1231">五彩岩岛</option><option value="1233">九天揽月</option><option value="1235">洛丽塔</option><option value="1237">海纳百川</option><option value="1239">日月生辉</option></select>
+<select class="areaContentId_bns"><option value="3111">武神之翼</option><option value="3113">夺魂战神</option><option value="3115">光复会</option><option value="3117">风华正茂</option><option value="3119">神龙摆尾</option><option value="3121">舍我其谁</option><option value="3123">石破天惊</option><option value="3125">暗影要塞</option><option value="3127">药王院</option><option value="3129">热力四射</option><option value="3131">烽火岁月</option><option value="3133">叱咤风云</option><option value="3135">力拔山河</option><option value="3137">天外飞仙</option><option value="3139">竹海轻舟</option></select>
+<select class="areaContentId_bns"><option value="2111">永灵峰</option><option value="2113">闭月羞花</option><option value="2115">寻宝人</option><option value="2117">威风八面</option><option value="2119">月影凝霜</option><option value="2121">四海升平</option><option value="2123">决胜千里</option><option value="2125">海蛇基地</option><option value="2127">万金堂</option><option value="2129">派对之王</option><option value="2131">流光溢彩</option><option value="2133">雷霆万钧</option><option value="2135">火炮兰</option><option value="2137">英雄豪杰</option><option value="2139">纵横四海</option></select>
+<select class="areaContentId_bns"><option value="1311">红叶山庄</option><option value="1313">风花雪月</option><option value="1315">古都灵兽</option><option value="1317">卧虎藏龙</option><option value="1319">烈火焚阳</option><option value="1321">傲气冲天</option><option value="1323">龙腾九天</option><option value="1325">武神塔</option><option value="1327">陶瓷坊</option><option value="1329">云游四海</option><option value="1331">春意盎然</option><option value="1333">铁血丹心</option><option value="1335">黑天照</option><option value="1337">逐风踏浪</option><option value="1339">明镜止水</option></select>
+<select class="areaContentId_bns"><option value="5011">白雾森林</option><option value="5013">旭日初升</option><option value="5015">迷宫卫士</option><option value="5017">破晓黎明</option><option value="5019">丘陵驿站</option><option value="5021">义结金兰</option><option value="5023">人在江湖</option><option value="5025">血浪鲨湾</option><option value="5035">日月神</option><option value="5037">降龙伏虎</option><option value="5039">披星戴月</option><option value="5027">药草坊</option><option value="5029">素雅主义</option><option value="5031">江南丽人</option><option value="5033">傲视天下</option></select>
+<select class="areaContentId_bns"><option value="4111">肝胆相照</option><option value="4113">通天晓地</option><option value="4115">南道拳豪</option><option value="4117">雷厉风行</option><option value="4119">天崩地裂</option><option value="4121">如日中天</option><option value="4123">乾坤一掷</option><option value="4125">螺旋迷宫</option><option value="4127">冶金庄</option><option value="4129">绝世佳人</option><option value="4131">怒沙之瞳</option><option value="4133">水月平原</option><option value="4135">护卫武士</option><option value="4137">胜者为王</option><option value="4139">决战沙场</option></select>
+<select class="areaContentId_bns"><option value="1411">半月湖</option><option value="1413">一代宗师</option><option value="1415">丰登谷</option><option value="1417">登峰造极</option><option value="1419">冷月寒霜</option><option value="1421">八面玲珑</option><option value="1423">天下无双</option><option value="1425">风车磨坊</option><option value="1427">木作坊</option><option value="1429">火力全开</option><option value="1431">冬幕游侠</option><option value="1433">唐门世家</option><option value="1435">东天霸</option><option value="1437">流星赶月</option><option value="1439">一骑当千</option></select>
+<select class="areaContentId_bns"><option value="3213">我行我素</option><option value="3215">金戈铁马</option><option value="3219">似水流年</option><option value="3221">白清剑</option><option value="3223">青春无悔</option><option value="3225">龙城飞将</option><option value="3227">平步青云</option><option value="3229">群雄逐鹿</option><option value="3211">极致时代</option><option value="3217">南征北战</option><option value="3231">竹雅居士</option><option value="3233">血峰沙漠</option><option value="3235">兄弟情</option><option value="3237">锐不可当</option><option value="3239">天马行空</option></select>
+<select class="areaContentId_bns"><option value="1511">豆蔻年华</option><option value="1513">风云再起</option><option value="1515">海誓山盟</option><option value="1517">瀚海星辰</option><option value="1519">风林火山</option><option value="1521">驰骋九州</option><option value="1523">斗转星移</option><option value="1525">侠客行</option><option value="1527">凯旋将军</option><option value="1529">花容月貌</option><option value="1531">华山论剑</option><option value="1533">稀世珍宝</option><option value="1535">乘风破浪</option><option value="1537">土门阵</option><option value="1539">鸟语花香</option></select>
+<select class="areaContentId_bns"><option value="2211">十动然拒</option><option value="2213">仙道传人</option><option value="2215">极魔之道</option><option value="2217">鉴赏岁月</option><option value="2219">自由主张</option></select>
+<select class="areaContentId_bns"><option value="1611">人艰不拆</option><option value="1613">风暴前夜</option><option value="1615">飞鸿踏雪</option><option value="1617">剑出白青</option><option value="1619">烽火连天</option><option value="1621">神谕寺院</option><option value="1623">初出武林</option><option value="1625">因缘交错</option><option value="1627">魔皇降世</option><option value="1629">缘定三生</option><option value="1631">随风而逝</option><option value="1633">乱世称雄</option><option value="1635">威风堂堂</option><option value="1637">荣光帝国</option><option value="1639">风云变幻</option></select>
+<select class="areaContentId_bns"><option value="3311">欺霜傲雪</option><option value="3315">雪脉贲张</option><option value="3317">仙人指路</option><option value="3319">金色丹枫</option><option value="3321">情深意重</option><option value="3313">星垂平野</option></select>
+<select class="areaContentId_bns"><option value="3411">洪福齐天</option><option value="3417">锦绣河山</option><option value="3425">月光回廊</option><option value="3433">沐风客栈</option><option value="3415">枫情万种</option></select>
+<select class="areaContentId_bns"><option value="4213">富甲一方</option><option value="4219">盛世流年</option><option value="4221">花落蝶舞</option><option value="4225">倾国倾城</option><option value="4227">风韵五洲</option><option value="4239">碧雪情天</option><option value="4243">抚星织梦</option><option value="4249">临风对月</option><option value="4253">雨醉江南</option><option value="4259">萍踪侠影</option></select>
+<select class="areaContentId_bns"><option value="3511">心有灵犀</option><option value="3513">长歌行</option><option value="3515">呼风唤雨</option><option value="3517">独孤求败</option><option value="3519">在水一方</option></select>
+<select class="areaContentId_bns"><option value="4311">灵动红尘</option><option value="4313">万物生</option><option value="4315">风华绝代</option><option value="4317">洪武未央</option><option value="4319">长风破浪</option></select>
+<select class="areaContentId_bns"><option value="1711">似水华年</option><option value="1713">岁月如歌</option><option value="1715">良辰今宵</option><option value="1717">暗夜流光</option><option value="1719">醉梦千城</option></select>
+<select class="areaContentId_bns"><option value="2311">继承之路</option><option value="2313">天命风流</option><option value="2315">玲珑码头</option><option value="2317">朝露夕颜</option><option value="2319">画水扬帆</option></select>
+<select class="areaContentId_bns"><option value="3611">珊瑚海岸</option><option value="3613">南天圣地</option><option value="3615">遗忘森林</option><option value="3617">东来客栈</option><option value="3619">彩云港湾</option></select>
+<select class="areaContentId_bns"><option value="9211">义薄云天</option><option value="9213">灵动九天</option><option value="9215">白虹贯日</option><option value="9217">战火燎原</option><option value="9311">一曲惊鸿</option></select>
+<br/>
+    <input type="radio" name="qt" value="roleInfo" checked="checked" style="display:none"/>
+    角色名: <input type="text" name="ext" /><br />
+    如无法显示请刷新<br />
+<iframe id="myframe" name="myframe" height="450" width="640" frameborder="no" border="0" scrolling=no></iframe>
+</body> 
+</html> 
