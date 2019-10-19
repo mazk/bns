@@ -2,110 +2,44 @@
 <head> 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
 <title>B&S</title> 
-<script src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.7.2.min.js"></script>
-<script type="text/javascript"> 
-$(document).ready(function(){ 
-$("#area1ContentId_bns").change(function(){ 
-$("#area1ContentId_bns option").each(function(i,o){ 
-if($(this).attr("selected")) 
-{ 
-$(".areaContentId_bns").hide(); 
-$(".areaContentId_bns").eq(i).show(); 
-$(".areaContentId_bns").removeAttr("name","world");
-$(".areaContentId_bns").eq(i).attr("name","world"); 
-} 
-}); 
-}); 
-$("#area1ContentId_bns").change(); 
-}); 
-</script> 
-</head> 
-<body>
-<form action="http://bangbang.qq.com/php/login" method="get" target="myframe" id="bns1">
-    <input type="radio" name="game" value="bns" checked="checked" style="display:none" />
+<script type="text/javascript" src="https://ossweb-img.qq.com/images/js/jquery/jquery-1.9.0.min.js"></script>
+
+
     服务器：
-<select id="area1ContentId_bns">
-    <option>--请选择大区--
-    <option>电信一区</option>
-    <option>电信二区</option>
-    <option>联通一区</option>
-    <option>电信三区</option>
-    <option>电信五区</option>
-    <option>电信六区</option>
-    <option>联通二区</option>
-    <option>电信七区</option>
-    <option>电信八区</option>
-    <option>联通三区</option>
-    <option>电信九区</option>
-    <option>电信十区</option>
-    <option>联通五区</option>
-    <option>电信洪福区</option>
-    <option>电信传说区</option>
-    <option>电信傲雪区</option>
-    <option>联通冰魂区</option>
-    <option>联通开泰区</option>
-    <option>电信盛世区</option>
-    <option>联通灵犀区</option>
-    <option>电信灵动区</option>
-    <option>电信时光区</option>
-    <option>电信建元区</option>
-    <option>联通彩云区</option>
-    <option>电信狂欢区</option>
-    <option>双线西洛区</option>
-    <option>南天国测试服</option>
-</select> 
-<select class="areaContentId_bns">
-<option>--请选择服务器-- 
-</select> 
-<select class="areaContentId_bns">
-    <option value="1911">无日峰</option>
-    <option value="1915">绿明村</option>
-    <option value="1919">铁傀王</option>
-    <option value="1925">飞扇堂</option>
-    <option value="1939">仙履奇缘</option>
-</select>
-<select class="areaContentId_bns">
-    <option value="2021">花样年华</option>
-    <option value="2029">斩天诀</option>
-</select>
-<select class="areaContentId_bns">
-    <option value="3023">月华神</option>
-    <option value="3039">风帝国</option>
-</select>
-<select class="areaContentId_bns"><option value="1115">落日星辉</option></select>
-<select class="areaContentId_bns"><option value="4115">南道拳豪</option></select>
-<select class="areaContentId_bns">
-    <option value="1219">御剑出鞘</option>
-    <option value="1221">独战群雄</option>
-</select>
-<select class="areaContentId_bns"><option value="3125">暗影要塞</option></select>
-<select class="areaContentId_bns"><option value="2029">斩天诀</option></select>
-<select class="areaContentId_bns"><option value="1221">独战群雄</option></select>
-<select class="areaContentId_bns"><option value="3125">暗影要塞</option></select>
-<select class="areaContentId_bns">
-    <option value="4115">南道拳豪</option>
-    <option value="4135">护卫武士</option>
-</select>
-<select class="areaContentId_bns"><option value="1219">御剑出鞘</option></select>
-<select class="areaContentId_bns"><option value="3211">极致时代</option></select>
-<select class="areaContentId_bns"><option value="1533">稀世珍宝</option></select>
-<select class="areaContentId_bns"><option value="2021">花样年华</option></select>
-<select class="areaContentId_bns"><option value="1711">似水华年</option></select>
-<select class="areaContentId_bns"><option value="3211">极致时代</option></select>
-<select class="areaContentId_bns"><option value="3211">极致时代</option></select>
-<select class="areaContentId_bns"><option value="4311">灵动红尘</option></select>
-<select class="areaContentId_bns"><option value="3611">珊瑚海岸</option></select>
-<select class="areaContentId_bns"><option value="4311">灵动红尘</option></select>
-<select class="areaContentId_bns"><option value="1711">似水华年</option></select>
-<select class="areaContentId_bns"><option value="2311">继承之路</option></select>
-<select class="areaContentId_bns"><option value="3611">珊瑚海岸</option></select>
-<select class="areaContentId_bns"><option value="1811">海阔天空</option><option value="1813">逐浪飞花</option></select>
-<select class="areaContentId_bns"><option value="5211">惊鸿舞</option><option value="5213">水寒风</option></select>
-<select class="areaContentId_bns"><option value="9211">义薄云天</option></select>
-<br/>
-    <input type="radio" name="qt" value="roleInfo" checked="checked" style="display:none"/>
-    角色名: <input type="text" name="ext" /><br />
-    <input type="submit" value="查询" /><sub>如无法显示请重复查询或刷新<sub><br />
-<iframe id="myframe" name="myframe" height="450" width="640" frameborder="no" border="0" scrolling=no></iframe>
+
+<select id="areaContentId" onchange="fun()">
+    <option>--请选择大区-- </option>
+
+    <option value="19">电信一区</option>
+
+
+    <option value="20">电信二区</option>
+
+
+    <option value="30">联通一区</option>
+
+    
+    <option value="12">电信六区</option>
+
+
+
+    <option value="55">双线battle区</option>
+    
+    <option value="56">双线破晓区</option>
+    
+    <option value="92">南天国一区</option>
+    <option value="91">南天国四区</option>
+</select> 目前仅可查询电信一区&南天国
+</br>
+<iframe id="info1" src="" frameborder="0" marginheight="0" marginwidth="0" height="703" width="1067"></iframe>
 </body> 
+<script type="text/javascript">
+   function fun(){
+   var area1=$("#areaContentId option:selected").val();
+   var frame = document.getElementById('info1');
+   frame.src="https://"+area1+"gate.bns.qq.com/ingame/bs/character/search/info";
+   }
+   
+   
+</script>
 </html> 
